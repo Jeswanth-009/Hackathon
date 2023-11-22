@@ -15,49 +15,52 @@ body, h1, h2, p, input, textarea, form {
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text);
     background-color: var(--background);
 }
 
-header {
-    background-color: var(--primary);
-    color: var(--secondary);
-    padding: 20px 0;
+/* Header styles */
+.header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
     z-index: 1000;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.logo {
-    flex: 1;
-    text-align: center;
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .nav-links a {
     color: var(--secondary);
     text-decoration: none;
     position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-links a::before {
@@ -65,7 +68,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     background-color: var(--secondary);
     visibility: hidden;
@@ -78,21 +81,25 @@ nav {
     transform: scaleX(1);
 }
 
-main {
-    padding-top: 80px;
+/* Main section styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section {
     padding: 50px 0;
     text-align: center;
-    opacity: 1; /* Changed opacity to 1 to ensure content visibility */
-    transition: all 0.5s ease-in-out;
-    color: var(--text);
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .box {
@@ -103,12 +110,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.main-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-}
-
+/* Footer styles */
 footer {
     background-color: var(--primary);
     color: var(--secondary);
@@ -121,11 +123,27 @@ footer {
 
 /* ... previous CSS remains unchanged ... */
 
-.logo {
-    flex: 1;
-    text-align: center;
-}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
 
-.logo h1 {
-    margin: 0;
+    .main-image {
+        max-height: 300px; /* Adjust image size for smaller screens */
+    }
+
+    /* Adjust font sizes or other styles as needed for better readability */
+    .box {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Change navigation links to a column on smaller screens */
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
 }
