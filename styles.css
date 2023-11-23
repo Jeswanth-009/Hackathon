@@ -147,3 +147,38 @@ footer {
         padding: 10px 0;
     }
 }
+
+/* ... previous CSS remains unchanged ... */
+
+/* Hero section styles */
+.hero-section {
+    height: 100vh; /* Set hero section to full viewport height */
+    background-image: url('Screenshot\ 2023-11-23\ 132936.png'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Set text color for contrast */
+}
+
+.hero-content {
+    padding: 20px;
+    color: black;
+}
+
+.hero-content {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin: 300px auto;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero-content p {
+    font-size: 1.5em;
+}
