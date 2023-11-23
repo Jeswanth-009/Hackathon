@@ -18,7 +18,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: var(--background);
+    background-color: #cfacac;
 }
 
 /* Header styles */
@@ -161,7 +161,7 @@ footer {
     align-items: center;
     text-align: center;
     color: #fff; /* Set text color for contrast */
-    background-color: #ffffff;
+    background-color: #cfacac;
 }
 
 
@@ -197,6 +197,20 @@ footer {
     width: 100%;
   }
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 5s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 2;
+    }
+  }
 
 .hero-content p {
     font-size: 1.5em;
