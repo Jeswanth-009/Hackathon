@@ -153,7 +153,7 @@ footer {
 /* Hero section styles */
 .hero-section {
     height: 100vh; /* Set hero section to full viewport height */
-    background-image: url('Screenshot\ 2023-11-23\ 132936.png'); /* Replace with your hero image */
+    background-image: url(''); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -161,7 +161,10 @@ footer {
     align-items: center;
     text-align: center;
     color: #fff; /* Set text color for contrast */
+    background-color: #ffffff;
 }
+
+
 
 .hero-content {
     padding: 20px;
@@ -169,15 +172,31 @@ footer {
 }
 
 .hero-content {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 20px;
     margin: 300px auto;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.typewriter-effect {
+  overflow: hidden; /* Hide overflow to clip the text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: 0.15em solid orange; /* Blinking cursor effect (optional) */
+  animation: typing 4s steps(28) forwards;
+}
+
+/* Keyframes for the typewriter animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 .hero-content p {
     font-size: 1.5em;
