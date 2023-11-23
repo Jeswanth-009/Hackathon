@@ -1,0 +1,65 @@
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfacac;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #cfacac; /* Adjust as needed */
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 50px;
+    text-align: center;
+  }
+  
+  .hero-screenshot {
+    flex: 1;
+  }
+  
+  /* Styles for the text in the hero section */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .hero-text,
+    .hero-screenshot {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  
