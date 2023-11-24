@@ -16,3 +16,11 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+// Get the button and content elements
+const button = document.querySelector('.collapsible');
+
+// Toggle the 'active' class to show/hide the content when the button is clicked
+button.addEventListener('click', function() {
+  button.classList.toggle('active');
+});
