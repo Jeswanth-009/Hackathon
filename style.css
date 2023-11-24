@@ -8,19 +8,26 @@ body {
   .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px;
     background-color: #cfacac; /* Adjust as needed */
   }
   
   .hero-text {
     flex: 1;
-    padding-right: 50px;
+    padding: 20px;
     text-align: center;
   }
   
   .hero-screenshot {
     flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-screenshot img {
+    max-width: 100%;
+    height: auto;
   }
   
   /* Styles for the text in the hero section */
@@ -55,11 +62,15 @@ body {
       flex-direction: column;
       padding: 30px;
     }
+
+    .hero-text,
+    .hero-screenshot {
+      padding: 20px;
+    }
+  }
   
     .hero-text,
     .hero-screenshot {
       padding: 0;
       text-align: center;
     }
-  }
-  
