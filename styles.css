@@ -116,7 +116,7 @@ footer {
     color: var(--secondary);
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -140,13 +140,14 @@ footer {
 
     .nav-links {
         flex-direction: column; /* Change navigation links to a column on smaller screens */
-        text-align: center;
+        text-align: cen;
     }
 
     .nav-links li {
         padding: 10px 0;
     }
 }
+
 
 /* ... previous CSS remains unchanged ... */
 
@@ -162,6 +163,21 @@ footer {
     text-align: center;
     color: #fff; /* Set text color for contrast */
     background-color: #cfacac;
+    /* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px; /* Adjust the width of the logo */
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
 }
 
 
@@ -184,7 +200,7 @@ footer {
 .typewriter-effect {
   overflow: hidden; /* Hide overflow to clip the text */
   white-space: nowrap; /* Prevent text from wrapping */
-  border-right: 0.15em solid orange; /* Blinking cursor effect (optional) */
+  border-right: 0.08em solid orange; /* Blinking cursor effect (optional) */
   animation: typing 4s steps(28) forwards;
 }
 
@@ -200,7 +216,7 @@ footer {
 
 .fade-in {
     opacity: 0;
-    animation: fadeInAnimation 5s ease-in forwards;
+    animation: fadeInAnimation 8s ease-in forwards;
   }
   
   @keyframes fadeInAnimation {
@@ -208,7 +224,7 @@ footer {
       opacity: 0;
     }
     to {
-      opacity: 2;
+      opacity: 1;
     }
   }
 
@@ -247,3 +263,69 @@ footer {
   }
   
  
+.Search_Container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #searchInput {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  img,
+  video {
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  img:hover,
+  video:hover {
+    transform: scale(1.05);
+  }
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 110px; /* Adjust the width of the logo */
+  margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}

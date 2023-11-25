@@ -24,3 +24,5 @@ const button = document.querySelector('.collapsible');
 button.addEventListener('click', function() {
   button.classList.toggle('active');
 });
+
+

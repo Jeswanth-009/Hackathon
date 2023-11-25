@@ -1,0 +1,152 @@
+/* Reset default margin and padding */
+body, h1, h2, p, input, textarea, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom color variables */
+:root {
+    --text: rgb(9, 10, 5);
+    --background: rgb(255, 255, 255);
+    --primary: rgb(63, 71, 36);
+    --secondary: rgb(223, 229, 205);
+    --accent: rgb(134, 151, 78);
+}
+
+/* Basic styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #cfacac;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: var(--secondary);
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--secondary);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 110px; /* Adjust the width of the logo */
+    margin-right: 10px; /* Add spacing between logo and text */
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.box {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  /* Grid Layout */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .photo {
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.1);
+  }
