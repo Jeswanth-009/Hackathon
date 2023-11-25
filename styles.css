@@ -116,8 +116,10 @@ footer {
     color: var(--secondary);
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    height: auto;
+    width: auto;
+
     width: 100%;
 }
 
@@ -153,7 +155,7 @@ footer {
 
 /* Hero section styles */
 .hero-section {
-    height: 100vh; /* Set hero section to full viewport height */
+    height: 80vh; /* Set hero section to full viewport height */
     background-image: url(''); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
