@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mediaItems = [
       { type: 'photo', name: 'Screen', url: 'Screenshot 2023-11-23 151034.png' },
       { type: 'photo', name: 'Half', url: 'Screenshot 2023-11-23 153124.png' },
-      { type: 'photo', name: 'Full', url: 'Screenshot 2023-11-23 153124.png' },
+      { type: 'photo', name: 'Full', url: 'Screenshot 2023-11-23 152902.png' },
       { type: 'video', name: 'Boiling Water', url: 'https://drive.google.com/file/d/1Ae4SsSvFQan3USqlcNGVn0DluXBzDTGD/view' },
       { type: 'video', name: 'Words', url: 'https://drive.google.com/file/d/1ArZy8982XvoALwLKY-ZkGWqXcc3xZ-3m/view' },
       { type: 'video', name: 'Translated', url: 'Translated.mp4' }
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayMediaResults(results) {
       resultsSection.innerHTML = '';
       if (results.length === 0) {
-        resultsSection.innerHTML = '<p>No results found</p>';
+        resultsSection.innerHTML = '<h5>No results found</h5>';
       } else {
         results.forEach(function(media) {
           if (media.type === 'photo') {
